@@ -65,6 +65,7 @@ To use the chatbot application:
 - Interactive chat interface.
 - AI-powered responses based on user input.
 - Error handling for invalid input or failed responses.
+- Currently , I have not integrated the database, so authentication will not work.
 
 ## Contributing
 
@@ -80,7 +81,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Credits
 
 - The chatbot application utilizes the Google Generative AI model for generating responses.
-- Special thanks to contributors who have helped improve and maintain the project.
 
 ## Contact
 
@@ -92,5 +92,5 @@ For questions, feedback, or inquiries about the chatbot application, please cont
 ## Acknowledgements
 
 - The chatbot application was inspired by similar projects and tutorials available online.
-- We acknowledge the support and guidance of the open-source community in the development of this project.
+- I acknowledge the support and guidance of the open-source community in the development of this project.
 
