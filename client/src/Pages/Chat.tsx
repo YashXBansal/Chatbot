@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios'; // Import Axios
-import link from "../Link"
+
 
 interface ChatMessage {
   id: number;
@@ -45,10 +45,11 @@ const Chat: React.FC = () => {
       });
 
       setChatHistory(prevChatHistory => [
-        ...prevChatHistory,{
-         role: 'user', parts: value },
-        { role: 'model', parts: response.data }
+        ...prevChatHistory,
+        { id: prevChatHistory.length, role: 'user', parts: value },
+        { id: prevChatHistory.length + 1, role: 'model', parts: response.data }
       ]);
+      
 
       setValue("");
     } catch (error) {
